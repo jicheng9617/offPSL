@@ -1,0 +1,13 @@
+*
+!.gitignore
+!README.md
+!requirements.txt
+!offpsl/
+!offpsl/**
+offpsl/**/__pycache__/
+offpsl/**/*.pyc*
+!offline_moo/
+!offline_moo/data/
+!offline_moo/data/.gitkeep
+!outputs/
+!outputs/.gitkeep
