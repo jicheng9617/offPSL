@@ -1,0 +1,112 @@
+{
+  "seed": 42,
+  "example": "ZDT2, six variables, declared offline mixture",
+  "data_sha256": "bdc7dc90c4e4a19de73f7a9654c47206648a80783d0732ff73279de00a35e432",
+  "methods": {
+    "offpsl": {
+      "method": "offpsl",
+      "seed": 42,
+      "config": {
+        "hidden_dim": 128,
+        "depth": 3,
+        "ensemble_size": 5,
+        "surrogate_steps": 2000,
+        "denoiser_steps": 2000,
+        "map_steps": 2000,
+        "batch_size": 128,
+        "learning_rate": 0.001,
+        "weight_decay": 1e-05,
+        "beta": 1.0,
+        "temperature": 0.05,
+        "ideal_offset": 0.2,
+        "support_weight": 0.1,
+        "covariance_weight": 0.05,
+        "diversity_weight": 0.01,
+        "sigma_min": 0.05,
+        "sigma_max": 0.2,
+        "perturbations": 4,
+        "preference_floor": 0.01,
+        "bounded_map": true
+      },
+      "n_samples": 4096,
+      "design_dim": 6,
+      "objective_dim": 2,
+      "timings": {
+        "surrogate_seconds": 12.623614299998735,
+        "denoiser_seconds": 2.1923946000024443,
+        "map_seconds": 8.296454999996058
+      },
+      "surrogate_training_mse_minmax": 1.4936865682102507e-06,
+      "environment": {
+        "python": "3.12.11",
+        "numpy": "2.1.2",
+        "torch": "2.7.1+cu118",
+        "device": "cpu",
+        "threads": 2
+      },
+      "evaluation": {
+        "objective_mae": 0.005732598714530468,
+        "x1_range": [
+          5.960464477539063e-08,
+          0.9986239671707153
+        ],
+        "mean_tail_coordinate": 1.0761884368548635e-05
+      }
+    },
+    "stch-psl": {
+      "method": "stch-psl",
+      "seed": 42,
+      "config": {
+        "hidden_dim": 128,
+        "depth": 3,
+        "ensemble_size": 5,
+        "surrogate_steps": 2000,
+        "denoiser_steps": 2000,
+        "map_steps": 2000,
+        "batch_size": 128,
+        "learning_rate": 0.001,
+        "weight_decay": 1e-05,
+        "beta": 1.0,
+        "temperature": 0.05,
+        "ideal_offset": 0.2,
+        "support_weight": 0.1,
+        "covariance_weight": 0.05,
+        "diversity_weight": 0.01,
+        "sigma_min": 0.05,
+        "sigma_max": 0.2,
+        "perturbations": 4,
+        "preference_floor": 0.01,
+        "bounded_map": true
+      },
+      "n_samples": 4096,
+      "design_dim": 6,
+      "objective_dim": 2,
+      "timings": {
+        "surrogate_seconds": 2.652677500002028,
+        "denoiser_seconds": 3.2000025385059416e-06,
+        "map_seconds": 3.5754654000047594
+      },
+      "surrogate_training_mse_minmax": 3.098560000580619e-06,
+      "environment": {
+        "python": "3.12.11",
+        "numpy": "2.1.2",
+        "torch": "2.7.1+cu118",
+        "device": "cpu",
+        "threads": 2
+      },
+      "evaluation": {
+        "objective_mae": 0.004184320569038391,
+        "x1_range": [
+          2.6226043701171875e-06,
+          3.904104232788086e-06
+        ],
+        "mean_tail_coordinate": 7.145652489271015e-06
+      }
+    }
+  },
+  "command": "python examples/zdt2.py --seed 42 --device cpu --threads 2 --out runs/zdt2-seed42",
+  "purpose": "Self-contained illustration; not the manuscript benchmark protocol",
+  "matplotlib": "3.10.3",
+  "validation_date": "2026-11-05",
+  "cpu": "Intel Core i5-14600KF"
+}

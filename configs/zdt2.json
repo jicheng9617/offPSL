@@ -1,0 +1,21 @@
+{
+  "hidden_dim": 128,
+  "depth": 3,
+  "ensemble_size": 5,
+  "surrogate_steps": 2000,
+  "denoiser_steps": 2000,
+  "map_steps": 2000,
+  "batch_size": 128,
+  "learning_rate": 0.001,
+  "beta": 1.0,
+  "temperature": 0.05,
+  "ideal_offset": 0.2,
+  "support_weight": 0.1,
+  "covariance_weight": 0.05,
+  "diversity_weight": 0.01,
+  "sigma_min": 0.05,
+  "sigma_max": 0.2,
+  "perturbations": 4,
+  "preference_floor": 0.01,
+  "bounded_map": true
+}

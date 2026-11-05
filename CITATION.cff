@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "Please cite the OffPSL manuscript; also cite Lin et al. (2024) when using STCH-PSL."
+title: "Conservative Pareto Set Amortization for Offline Multi-Objective Optimization"
+type: software
+authors:
+  - family-names: Cheng
+    given-names: Ji
+    affiliation: City University of Hong Kong
+    email: jicheng9617@gmail.com
+version: 0.1.0
+license: MIT

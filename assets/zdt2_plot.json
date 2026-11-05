@@ -1,0 +1,34 @@
+{
+  "source": "All six Fig. 1 methods plus archived PCD results",
+  "training": "none; replot only",
+  "seed": 1000,
+  "offline_sha256": "6fdf6802a3806cd27227478faa08b406c56b560c3fb3fe849e1c5573b4002afa",
+  "offline_rows": 60000,
+  "displayed_offline_rows": 3500,
+  "background_sampling_seed": 1000,
+  "candidate_counts": {
+    "mh": 256,
+    "mobo": 256,
+    "pcd": 256,
+    "paretoflow": 256,
+    "pgd_moo": 256,
+    "offpsl": 256,
+    "stch-psl": 256
+  },
+  "preference_colored": [
+    "mobo",
+    "offpsl",
+    "stch-psl"
+  ],
+  "shared_objective_ylim": [
+    -0.22031518502510153,
+    9.548053571310659
+  ],
+  "shared_objective_xlim": [
+    -0.040000378338882,
+    1.040000834465027
+  ],
+  "numpy": "2.1.2",
+  "matplotlib": "3.10.3",
+  "plot_seconds": 1.6707070999982534
+}
